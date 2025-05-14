@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Modelos de box</title>
+   
+   <style>
+      h1 { /* box-level , se quiser transformar box-level em inline, use o a tag display: inline; ao usar inline não podemos utilizar height e width*/
+      
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            border: 10px solid darkslategray;
+             
+            padding: 10px 20px;
+             
+            margin: 20px auto 40px auto;
+
+            outline: 5px dashed salmon;
+         }
+         
+         a { /* inline-level  , podemos utilizar display: block; assim a box ocupa a largura total do site.*/ 
+           
+            border: 10px solid red; 
+            
+            padding: 10px 10px 10px 10px;
+            }
+
+   </style>
+</head>
+<body>
+         <h1>Exemplo e caixa box-level</h1>
+         <p>Parágrafos também são exemplos de box-level, mas os <a href="#"> links são exemplos de boxs inline-level</a>. Vamos ver como tudo isso funciona.</p>
+                
+</body>
+</html>
