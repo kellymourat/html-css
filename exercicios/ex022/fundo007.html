@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Alinhamento Vertical</title>
+                <style>
+                #conteiner {
+                      background-image: url(imagens/target001.png);
+                      background-size: 100% 100%; /* tamanho total da img*/
+
+
+                      position: relative;
+                      height: 96vh; /* ocupa a veiwport height toda */
+                      padding: 10px;
+                      background-color: blueviolet;
+                      
+
+
+                }
+                #conteudo{
+                      background-image: url(imagens/target001.png);
+                      background-size: 100% 100%;
+
+                      position: absolute;
+                      height: 200px;
+                      width: 400px;
+                      background-color: rgb(127, 65, 138);
+                      
+
+                      left: 50%; /* distância da esquerda, p center*/
+                      top: 50%; /* distância do top , p center */
+
+                      transform: translate(-50%, -50%);
+
+
+                }
+                </style>             
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+
+        </article>         
+    </section>
+
+                
+</body>
+</html>
