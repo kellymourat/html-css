@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+     font-family: 'passion one';
+     src: url(Passion_One/PassionOne-Bold.ttf) format('truetype');
+}
+* {  /* tirando toda margin do site*/
+    margin: 0px;
+    padding: 0px; 
+
+}
+
+:root {
+   --fonte-padrao:  Arial, Helvetica, sans-serif;
+   --fonte-passion: 'passion one','cursive';
+   --font-google: "Sriracha", 'cursive';
+}
+
+html, body {
+     min-height: 100vh; /* tamanho min do meu html e body*/
+     background-color: darkgrey;
+          
+}
+
+header {
+     background-color: black;
+     color: white;
+     text-align: center;
+       
+}
+
+header h1 {
+     padding-top: 50px; /* distância da parte superior */
+     font-variant: small-caps; /* letra maiúscula, mas primeiras letras destacadas */
+}
+
+header p {
+     padding-bottom: 50px; /*distância da parte de baixo*/     
+}
+
+header a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bolder; /*fonte em negrito*/
+}
+
+header a:hover {
+     text-decoration: underline;
+
+}
+
+section { /* essa configuração foi a base do conteúdo! cria largura de 10vh entre os textos, e torna o site adaptável conforme a diminuição da tela */
+     padding-top: 10vh;
+     padding-bottom: 10vh;
+     line-height: 2em; /* espaçamento entre o texto*/
+     padding-left: 30px;
+
+}
+section > pre { /* pre usado no luga <br>*/
+     white-space: pre-line;
+
+}
+
+section.estrofe {
+     background-color: white;
+     color: black;
+           
+}
+
+section.imagem pre {
+     background-color: rgba(0, 0, 0, 0.445);
+     color: white;
+     width: 400px;    
+}
+
+section.imagem {
+     background: url('imagens/background001.jpg') right center fixed;
+   
+}
+
+#fundo2  {
+     background: url('imagens/background002.jpg') right center fixed;
+   
+}
+
+footer {
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 4px;
+} 
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}  
+    
