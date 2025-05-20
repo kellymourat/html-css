@@ -2,26 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-@font-face {
-     font-family: 'passion one';
-     src: url(Passion_One/PassionOne-Bold.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
 * {  /* tirando toda margin do site*/
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
+    font-size: 1em; 
 
 }
 
 :root {
-   --fonte-padrao:  Arial, Helvetica, sans-serif;
-   --fonte-passion: 'passion one','cursive';
+   --fonte-padrao:  Verdana, 'Geneva', Tahoma, sans-serif;
+   --fonte-passion: 'Passion One', 'cursive';
    --font-google: "Sriracha", 'cursive';
 }
 
 html, body {
      min-height: 100vh; /* tamanho min do meu html e body*/
      background-color: darkgrey;
-          
+     font-family: var(--fonte-padrao);
+         
 }
 
 header {
@@ -33,7 +33,9 @@ header {
 
 header h1 {
      padding-top: 50px; /* distância da parte superior */
-     font-variant: small-caps; /* letra maiúscula, mas primeiras letras destacadas */
+     font-variant: small-caps; /* texto maiúsculo, primeira letra destacada */
+     font-family: var(--fonte-passion);
+     font-size: 10vw; /* texto se adapta ao tamanho da tela*/
 }
 
 header p {
@@ -51,14 +53,16 @@ header a:hover {
 
 }
 
-section { /* essa configuração foi a base do conteúdo! cria largura de 10vh entre os textos, e torna o site adaptável conforme a diminuição da tela */
+section { /*configuração foi a base do conteúdo, cria largura de 10vh entre os textos, torna o site adaptável. */
      padding-top: 10vh;
      padding-bottom: 10vh;
      line-height: 2em; /* espaçamento entre o texto*/
      padding-left: 30px;
+     font-size: 3.5vw; /* 5% vw texto se adapta conforme o tamanho da tela*/
+    
 
 }
-section > pre { /* pre usado no luga <br>*/
+section > pre { /* pre usado no lugar <br>*/
      white-space: pre-line;
 
 }
@@ -68,11 +72,19 @@ section.estrofe {
      color: black;
            
 }
+section.estrofe pre {
+     font-family: var(--font-google);
+    
+
+}
 
 section.imagem pre {
+     display:inline-block; /* box se adapta conforme o tamanho da tela*/
+     padding-top: 5px;
+     font-family: var(--font-google);
      background-color: rgba(0, 0, 0, 0.445);
      color: white;
-     width: 400px;    
+         
 }
 
 section.imagem {
