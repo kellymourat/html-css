@@ -11,12 +11,19 @@
                     table {
                        width: 500px;
                        border-collapse: collapse; /* sem espaço entre as celulas*/
+                       position: relative; /* conf para fixar cabeçalho dda tabela*/
                      }
                      caption {
                         font-size: 1.5em;
                         font-weight: bolder;
                         padding: 10px;
                         background-color: silver;
+                     }
+                     thead > tr > th { /* cabeçalho fixo*/
+                        position: sticky; 
+                        top: 1px; /* letra invisivel por tras da tabela*/
+                       background-color:  rgb(83, 83, 83); /* mesma cor do cabeçalho*/
+            
                      }
                      td, th {
                        border: 1px solid black;
@@ -44,13 +51,13 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
        ANATOMIA PARA TABELAS GRANDES 
-       CAPTION = define a legenda ou o título de uma tabela
+       CAPTION = define a legenda ou o titulo de uma tabela
         TABLE = representa uma tabela, ou seja, dados apresentados em linhas e colunas
            THEAD = "cabeçalho da tabela"
               TR, TD, TH
-           TBODY = define o corpo do documento, ou seja, o conteúdo que é mostrado ao usuário no navegador
+           TBODY = define o corpo do documento, ou seja, o conteudo que é mostrado ao usuário no navegador
               TR, TD, TH 
-           TFOOT = "roda pé da tabela"
+           TFOOT = "roda pe da tabela"
               TR, TD, TH
     -->
     <table>
