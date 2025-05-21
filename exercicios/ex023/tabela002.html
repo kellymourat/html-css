@@ -5,45 +5,56 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Tabelas</title>
                 <style>
-                    body {
+                     body {
                        font-family: Arial, Helvetica, sans-serif;
-                    }
+                     }
                     table {
                        width: 500px;
                        border-collapse: collapse; /* sem espaço entre as celulas*/
-                    }
-                    td, th {
+                     }
+                     caption {
+                        font-size: 1.5em;
+                        font-weight: bolder;
+                        padding: 10px;
+                        background-color: silver;
+                     }
+                     td, th {
                        border: 1px solid black;
                        padding: 10px;  
-                    }
-                    thead th {
-                        padding: 30px;    
-                    }
-                    thead, tfoot {
-                        background-color: dimgrey;   
-                    }
+                     }
+                     thead th {
+                        padding: 15px;
+                          
+                     }
+                     thead, tfoot {
+                        background-color: rgb(83, 83, 83);
+                        color: white;
+                         
+                     }
                      .num {
                         text-align: right;
-                    }
+                     }
                 </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!-- 
+    <!--
        ANATOMIA PARA TABELAS GRANDES 
-        TABLE 
-           THEAD
+       CAPTION = define a legenda ou o título de uma tabela
+        TABLE = representa uma tabela, ou seja, dados apresentados em linhas e colunas
+           THEAD = "cabeçalho da tabela"
               TR, TD, TH
-           TBODY
+           TBODY = define o corpo do documento, ou seja, o conteúdo que é mostrado ao usuário no navegador
               TR, TD, TH 
-           TFOOT
+           TFOOT = "roda pé da tabela"
               TR, TD, TH
     -->
     <table>
+      <caption>População das Unidades Federativas</caption>
        <thead>
           <tr>
-             <th>Unidade Federativa</th>
-             <th>População</th>
+             <th scope="col">Estado</th>
+             <th scope="col" style="width: 50px;">População</th>
          </tr>
        </thead>
        <tbody>
@@ -159,7 +170,7 @@
 
        <tfoot>
           <tr>
-             <th>Total de Habitantes</th>
+             <th scope="row">Total de Habitantes</th>
              <td class="num"><strong>212 583 750</strong></td>
          </tr>
        </tfoot>
