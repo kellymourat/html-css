@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Tabela</title>
+                <style> 
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+
+                }
+                table {
+                   width: 400px;
+                   border-collapse: collapse;
+                   border: 1px solid black;
+                }
+                thead tr th{
+                   border: 1px solid black;
+                   padding: 10px;
+                }
+                tbody tr td {
+                   border: 1px solid black;
+                   padding: 10px;
+                }
+                .cNome {
+                   background-color: rgb(162, 91, 230);
+                }
+                .black {
+                   background-color: rgba(0, 0, 0, 0.63);
+                }
+                .pink {
+                   background-color: hotpink;
+
+                }  
+                .blue {
+                   background-color: pink;
+
+                } 
+                </style>
+</head>
+<body>
+      <h1>Agrupando coluna com Colgroup</h1>
+      <table>
+           <colgroup>
+                <col class="cNome" span="1">
+                <col class="black">
+                <col class="pink">
+                <col class="blue">
+          </colgroup>
+        <caption>Tabela Dados Pessoais</caption>
+        <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+              </tr>   
+        </thead>
+          <tbody>
+                <tr>
+                <td>Kelly</td>
+                  <td>F</td>
+                  <td>30</td>
+                  <td>Programadora</td>
+                </tr>
+                <tr>
+                   <td>Ana Maria</td>
+                   <td>F</td>
+                   <td>25</td>
+                   <td>Jornalista</td>
+                </tr>
+                <tr>
+                  <td>Gustavo</td>
+                  <td>M</td>
+                  <td>42</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>
+                   <td>Hélio</td>
+                   <td>M</td>
+                   <td>19</td>
+                   <td>Vendedor</td>
+                </tr>
+                <tr>
+                  <td>Maria Clara</td>
+                  <td>F</td>
+                  <td>19</td>
+                  <td>Médica</td>
+                </tr>
+                <tr>
+                  <td>Ótavio</td>
+                  <td>M</td>
+                  <td>22</td>
+                  <td>Nutricionista</td>
+                </tr>
+          </tbody>
+      </table>     
+</body>
+</html>
