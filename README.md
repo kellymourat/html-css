@@ -43,4 +43,4 @@ Curso em andamento. O repositório será atualizado continuamente conforme novos
 
 ## Link do Curso
 
-[Estudonauta](https://www.estudonauta.com)
+[Estudonauta] (https://www.estudonauta.com)
