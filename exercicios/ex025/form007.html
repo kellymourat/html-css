@@ -15,6 +15,7 @@
 <body>
      <h1>Exemplo de Formulário</h1>
      <form action="cadastro.php" method="Post" autocomplete="on">
+      
       <p>
          <label for="iest">Localidades</label>
          <select name="estado" id="iest">
@@ -32,21 +33,22 @@
               <option value="LO">Loures</option>
               <option value="MF">Mafra</option>
          </select>
-
       </p>
-       <label for="iprof">Profissão: </label>
-       <input type="text" name="prof" id="iprof" list="lstprof">
 
-       <datalist id="lstprof">
-             <option value="ADM">Administrador</option>
-             <option value="CONT">Contabilista</option>
-             <option value="DEV">Desenvolvedor</option>
-             <option value="PROF">Professor</option>
-       </datalist>
+      <p>
+         
+          <label for="iprof">Profissão: </label>
+          <input type="text" name="prof" id="iprof" list="lstprof">
+          <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+          </datalist>
+      </p>
 
        <p>
           <label for="imsg">Mensagem:</label>
-
           <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
        </p>
 
