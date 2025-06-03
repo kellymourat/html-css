@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Formulário</title>
+                <style>
+                       body {
+                           font-family: Arial, Helvetica, sans-serif;
+                           background-color: rgb(137, 123, 224);
+
+                       }         
+                </style>
+</head>
+<body>
+     <h1>Exemplo de Formulário</h1>
+     <form action="cadastro.php" method="Post" autocomplete="on">
+      <p>
+         <label for="iest">Localidades</label>
+         <select name="estado" id="iest">
+              <option value="">---Escolha---</option>
+              <option value="Lx">Lisboa</option>
+              <option value="AL">Almada</option>
+              <option value="ALM">Alcochete</option>
+              <option value="ALQ">Alenquer</option>
+              <option value="ALV">Alverca</option>
+              <option value="AM">Amadora</option>
+              <option value="AZ">Azambuja</option>
+              <option value="BB">Barreiro</option>
+              <option value="CP">Campo de Ourique</option>
+              <option value="CS">Cascais</option>
+              <option value="LO">Loures</option>
+              <option value="MF">Mafra</option>
+         </select>
+
+      </p>
+       <label for="iprof">Profissão: </label>
+       <input type="text" name="prof" id="iprof" list="lstprof">
+
+       <datalist id="lstprof">
+             <option value="ADM">Administrador</option>
+             <option value="CONT">Contabilista</option>
+             <option value="DEV">Desenvolvedor</option>
+             <option value="PROF">Professor</option>
+       </datalist>
+
+       <p>
+          <label for="imsg">Mensagem:</label>
+
+          <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+       </p>
+
+      <p>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpar">
+      </p>
+     </form>           
+</body>
+</html>
