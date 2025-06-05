@@ -1,3 +1,10 @@
 @charset "UTF-8";
 
 /*Aparelho em pé (portrait)*/
+
+body {
+    background-image: url(../imagens/back-pc.jpg);
+    background-position: center center;
+   
+    
+}

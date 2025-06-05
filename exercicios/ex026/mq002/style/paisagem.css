@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* parelho deitado (landscape) */
+
+body {
+  background-image: url(../imagens/pexels-stokeron-27037578.jpg);
+  background-position: top bottom;
+   
+  
+}
