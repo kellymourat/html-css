@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+       /* Declarações gerais*/      
+        *  {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+        
+        }
+          body {
+           background-repeat: no-repeat;
+           background-position: center center;
+           background-size: contain;
+           background-color: #000; /* para preencher as faixas vazias */
+        }
+
+        h1 {
+            color: rgb(54, 42, 2);
+            text-shadow: 2px 2px 0px rgba(26, 26, 44, 0.233);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Declarrações retrato*/
+        @media screen and (orientation: portrait) {
+
+            body {
+                background-image: url(../mq003/imagens/back-pc.jpg);
+                background-position: center center;  
+            }   
+        }
+        /* Declarações paisagem*/
+        @media screen and (orientation: landscape){      
+            body {
+               background-image: url(../mq003/imagens/pexels-stokeron-27037578.jpg);
+               background-position: top bottom;
+            }    
+        }
+    </style>
+<body>
+    <h1>Change device orientation</h1>             
+</body>
+</html>
