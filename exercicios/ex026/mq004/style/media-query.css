@@ -2,6 +2,103 @@
 
 /* Todas as demais mídias */
 
-@media print {
+/* Typical Device Breakpoints
+------------------------------
+Extra small devices: max-width: 600px
+@media only screen and (max-width: 600px)
+
+Small devices, portrait tablets and large phones: 600px
+@media only screen and (min-width: 600px) 
+
+landscape tablets: 768px > 992px
+@media only screen and (min-width: 768px)
+
+laptops/ desktops: 992px até 1220px
+@media only screen and (min-width: 992px)
+
+Extra large devices: > 1200px
+@media only screen and (min-width: 1200px)
+
+*/
+
+@media print { /*Impressão / confg de teste*/
+
+     * {
+         font-family: 'Courier New', 'Courier', 'monospace';
+     }
+  
+     body {
+          background-image: url(../imagens/icon-print.png);   
+
+     }
+
+     main {
+       width: 90vw;
+       border: 2px solid black;
+
+     }
+
+      main h1 {
+      text-shadow: none;
+      color: black;
+
+     }
+     main::after {
+         content: 'Impressão por berk.k :)';
+         text-decoration: overline;
+
+     } 
+     
+     img#phone {display: none;}
+     img#tablet {display: none;}
+     img#print { display: block;}
+     img#tv {display: none;}
+     img#pc {display: none;}
                 
+}
+
+@media screen  and (min-width: 600px)  and (max-width: 992px){ /*TABLET*/
+   
+   body {
+       background-image: url(../imagens/back-tablet.jpg);
+   
+   }
+
+   img#phone {display: none;}
+   img#tablet {display: block;}
+   img#print { display: none;}
+   img#tv {display: none;}
+   img#pc {display: none;}
+                
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*DESKTOP*/
+    body {
+       background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print { display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /*LARGE DEVICES*/
+    body {
+      background-image: url(../imagens/back-tv.jpg);
+
+    }
+     
+    main {
+      width: 700px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print { display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}      
 }
