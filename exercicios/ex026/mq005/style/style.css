@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html, body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+  background-image: linear-gradient(to right, #1f252c, #717f91, #2b333b);
+  overflow-x: hidden;
+
+}
+
+/* Header fixo com imagem */
+header {
+  position: fixed;
+  top: 0;
+  padding-bottom: 30px;
+  width: 100vw;
+  height: 400px;
+  background-color: #010101;
+  overflow: hidden;
+  z-index: 10;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* desce o conteúdo para a base do header */
+  align-items: flex-start; /* alinha o conteúdo à esquerda */
+  color: white;
+
+}
+
+.pantera-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  object-fit: contain; /* para não cortar a imagem */
+  z-index: 1;
+ 
+}
+
+
+main {
+  margin-top: 400px; /* espaço do header fixo */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+
+}
+
+
+article > h2 {
+  background-image: linear-gradient(to left, #0101014f, #1f252c4b, #3E4F65);
+  margin: -10px -20px -0px -20px; /*ocupando a parte superior e lateral da box */
+  border-radius: 2px 2px 2px 2px;
+  text-align: center;
+ 
+  
+}
+
+article > p {
+  color: rgb(6, 17, 19);
+  font-size: 1.1em;
+  line-height: 1.8em;
+  text-indent: 20px;
+  margin-top: 20px;
+
+}
+
+/* Telas menores que 768px */
+@media screen and (max-width: 768px){
+  header h1 {
+    font-size: 1.5em;
+
+  }
+
+  main {
+    padding: 10px;
+    
+  }
+
+  article > h2 {
+    font-size: 1.2em;
+
+  }
+
+  article > p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+
+/* Telas maiores que 1920px (ex: 4K) */
+@media (min-width: 1920px) {
+  main {
+    max-width: 1200px;
+    font-size: 1.3em;
+  }
+
+  article > h2 {
+    font-size: 2em;
+  }
+
+  article > p {
+    font-size: 1.3em;
+  }
+}
+
+
+
+   
+
+
+
+
+
+
+
