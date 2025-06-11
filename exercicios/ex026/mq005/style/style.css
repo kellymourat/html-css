@@ -20,8 +20,7 @@ header {
   position: fixed;
   top: 0px;
   width: 100vw;
-  height: 310px;
-  background-color: #010101;
+  height: 250px;
   z-index: 10;
  
 }
@@ -30,7 +29,7 @@ header > h1 {
   background-color: #010101;
   color: white;
   text-align: center;
-  padding-top: 336px;
+  padding-top: 280px;
    
 }
 
@@ -62,7 +61,7 @@ nav > ul {
 
 nav > ul > li > a {
   display: block;
-  padding: 3px;
+  padding: 2px;
   text-decoration: none;
   text-align: center;
   background-color: #9faab9;
@@ -82,7 +81,7 @@ nav > ul > li > a:hover {
   top: 50%;
   left: 50%;
   margin-bottom: 100px;
-  height: 340px;
+  height: 300px;
   max-width: none;
   transform: translate(-50%, -50%);
   object-fit: contain; /* para não cortar a imagem */
@@ -92,36 +91,27 @@ nav > ul > li > a:hover {
 
 main {
   font-family: 'sans-serif';
-  margin-top: 480px; /* espaço do header fixo */
+  max-width: 600px;
+  margin-top: 422px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
-  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
   font-size: 1.2em;
   background-color: rgba(196, 223, 248, 0.925);
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 10px 10px 10px 10px;
   z-index: 1;
 
 }
 
-/* sobrescreve a cor na galeria */
 .pagina-galeria main {
-  background-color: #0101012a;
+  background-color: rgba(1, 1, 1, 0.16);
   
-
-}
-
-.container {
-  max-width: 1200px;
-  padding: 10px;
-  margin: 0px 10px 0px 10px;
-  background-color: rgba(0, 0, 0, 0.068); /* Fundo semi-transparente para legibilidade */
-
 }
 
 article > h2 {
-  background-image: linear-gradient(to left, #0101012a, #1f252c28, #3E4F65);
-  margin: -10px -20px -10px -20px; /*ocupando a parte superior e lateral da box */
+  background-image: linear-gradient(to left, #1f252c28, #3E4F65);
+  font-size: 1.1em;
+  margin: -10px -10px -10px -10px; /*ocupando a parte superior e lateral da box */
   padding-left: 11px;
   margin-bottom: 20px;
  
