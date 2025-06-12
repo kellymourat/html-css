@@ -44,6 +44,11 @@
   article > p {
     font-size: 1.3em;
   }
+
+  .galeria img {
+    flex: 1 1 120px;
+    max-width: 60%;
+  }
 }
 
 /* Media query para modo paisagem com altura limitada */
