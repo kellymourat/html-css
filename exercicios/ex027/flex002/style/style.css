@@ -27,17 +27,21 @@ header {
 }
 
 div.conteiner {
-    background-color: bisque;
-    display: flex;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+    
 
 
 }
 
 div.item {
-   background-color: rgb(115, 62, 153);
-   border: 1px solid black;
-   height: 200px;
-   flex: auto;
+  background-color: rgb(115, 62, 153);
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px;
+   
 
 
 }
