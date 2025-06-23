@@ -31,9 +31,9 @@ div.conteiner {
   background-color: bisque;
   display: flex;
   height: 300px;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
 
 
 }
@@ -41,8 +41,6 @@ div.conteiner {
 div.item {
   background-color: rgb(86, 25, 207);
   border: 1px solid black;
-   
-   
-
+  
 
 }
