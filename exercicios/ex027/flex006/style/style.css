@@ -32,16 +32,11 @@ div.conteiner {
   align-content: space-around;
   height: 400px;
 
-
 }
 
 div.item {
   background-color: rgb(115, 62, 153);
   border: 1px solid black;
   padding: 40px;
-  
-
-  
-
 
 }
