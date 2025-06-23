@@ -1,0 +1,47 @@
+@charset  "UTF-8";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+
+}
+
+body {
+  background-color: darkslateblue;
+   
+     
+}
+
+header {
+  background-color: darkslateblue;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  width: 100vw;
+  height: 50px;
+
+}
+
+div.conteiner {
+  background-color: bisque;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  height: 400px;
+
+
+}
+
+div.item {
+  background-color: rgb(115, 62, 153);
+  border: 1px solid black;
+  padding: 40px;
+  
+
+  
+
+
+}
