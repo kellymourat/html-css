@@ -21,22 +21,22 @@ header {
    
    display: flex;
    flex-flow: row wrap;
-   justify-content: space-around;
-   align-items: center;
+   justify-content: space-between;
+   align-items: flex-end;
 
 }
 
 header > h1 {
-   border: 1px dotted  black;
+   padding: 20px;
    flex: auto;
    
 
 }
 
 nav {
-  border: 1px dotted black;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  align-items: flex-end;
  
 
 }
@@ -61,10 +61,25 @@ nav > a:hover {
 
 main {
   background-color: white;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
+  flex-flow: row wrap;
+  
 
+}
+
+main > p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  padding: 5px;
+  
+}
+
+main > h2 {
+   background-color: rgba(255, 228, 225, 0.5);
+   border: 5px;
 
 }

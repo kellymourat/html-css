@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-header > nav {
-  flex-flow: column nowrap;
-
+header, header > nav {
+  flex-flow: row wrap;
+  align-items: flex-end;
 
 }
