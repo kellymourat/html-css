@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)" />
+  <style>
+    /* Esconder honeypot */
+    input[name="_honey"] {
+      display: none;
+    }
+    /* Remove quebras e controla espaçamento */
+    label, input, textarea, button {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kelly Moura, Frontend developer.</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Entre em Contato</h2>
+    <p>Caso queira me chamar para uma oportunidade ou deixar um contato para retorno:</p>
+    <form action="https://formsubmit.co/kellymoura.pt@gmail.com" method="POST">
+      <input type="text" name="_honey" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="obrigado.html" />
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefone">Telefone (opcional):</label>
+      <input type="tel" id="telefone" name="telefone" />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="social-links">
+      <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </main>
+</body>
+</html>
