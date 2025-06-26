@@ -163,6 +163,7 @@ main#principal img {
 .text-content > p {
   background-color: rgba(255,192,203,0.47);
   font-family: monospace;
+  line-height: 1.5em;
   font-size: 1.5em;
   padding: 10px;
   margin-bottom: 12px;
