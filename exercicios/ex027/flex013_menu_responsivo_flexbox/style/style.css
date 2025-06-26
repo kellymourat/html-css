@@ -221,7 +221,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 6px;
-  font-weight: 600;
+  font-weight: 600px;
   color: #5b2a86; 
   font-size: 1rem;
 }
@@ -235,7 +235,7 @@ button {
   border-radius: 6px;
   color: white;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 700px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-sizing: border-box;
