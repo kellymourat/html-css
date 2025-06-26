@@ -6,19 +6,6 @@
   <title>Contact</title>
   <link rel="stylesheet" href="style/style.css" />
   <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)" />
-  <style>
-    /* Esconder honeypot */
-    input[name="_honey"] {
-      display: none;
-    }
-    /* Remove quebras e controla espaçamento */
-    label, input, textarea, button {
-      display: block;
-      margin-bottom: 15px;
-      width: 100%;
-      max-width: 400px;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -32,19 +19,19 @@
   <main>
     <h2>Entre em Contato</h2>
     <p>Caso queira me chamar para uma oportunidade ou deixar um contato para retorno:</p>
-    <form action="https://formsubmit.co/kellymoura.pt@gmail.com" method="POST">
+    <form action="#" method="POST">
       <input type="text" name="_honey" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_next" value="obrigado.html" />
 
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
+      <input type="text" id="nome" name="nome" required autocomplete="name"/>
 
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required />
+      <input type="email" id="email" name="email" required autocomplete="email"/>
 
       <label for="telefone">Telefone (opcional):</label>
-      <input type="tel" id="telefone" name="telefone" />
+      <input type="tel" id="telefone" name="telefone" required autocomplete="tel" />
 
       <label for="mensagem">Mensagem:</label>
       <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
