@@ -5,33 +5,43 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Grid Layout na Prática</title>
                 <style>
+                  body {
+                     font-family: Arial, Helvetica, sans-serif;
+                     background-color: rgba(0, 0, 0, 0.801);
+                     color: white;
+
+                  }
                    div.container {
-                      border: 3px solid navy;
-                      height: 250px;
-                      display: grid;
-                      grid-template-columns: auto auto auto; /*divide em três columns*/
-                      grid-template-rows: auto auto auto;
-                      gap: 10px; /* espaçamento entre os grid line*/
+                     border: 3px solid  white;
+                     height: 250px;
+                     display: grid;
+                     grid-template-columns: auto auto auto; /*divide em três columns*/
+                     grid-template-rows: auto auto auto; /*divide em três linhas*/
+                     gap: 10px; /* espaçamento entre os grid line*/
+                     align-items: normal;
+                     justify-items: normal;
+                     align-content: normal;
+                     justify-content: normal;
+
 
                    }
 
                    div.item {
-                      border: 3px solid plum;
-                      padding: 5px;
+                     border: 3px solid plum;
+                     padding: 5px;
 
                    }
-
                 </style>
 </head>
 <body>
     <div class="container">
-          <div class="item">A</div>
-          <div class="item">B</div>
-          <div class="item">C</div>
-          <div class="item">D</div>
-          <div class="item">E</div>
-          <div class="item">F</div>
-          <div class="item">G</div>     
+         <div class="item">A</div>
+         <div class="item">B</div>
+         <div class="item">C</div>
+         <div class="item">D</div>
+         <div class="item">E</div>
+         <div class="item">F</div>
+         <div class="item">G</div>     
     </div>       
 </body>
 </html>
