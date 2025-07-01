@@ -7,7 +7,6 @@
 
 }
 
-/* Corpo com gradiente (exemplo seu) */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,7 +19,7 @@ body {
 
 body::before {
   content: "";
-  position: fixed; /* muda de absolute para fixed */
+  position: fixed; 
   top: 151px;
   right: 0;
   width: 100vw;
@@ -34,11 +33,11 @@ body::before {
 
 body::after {
   content: "";
-  position: fixed; /* importante para o efeito */
+  position: fixed; 
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 380px; /* ou mais, se quiser que suba mais alto */
+  height: 380px; 
   background: url('../imagem/pexels-karolina-grabowska-4622893.jpg') no-repeat bottom left;
   background-size: contain;
   opacity: 0.1;
