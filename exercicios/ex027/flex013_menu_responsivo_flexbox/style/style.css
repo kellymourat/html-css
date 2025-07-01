@@ -52,25 +52,26 @@ main, header, nav, form, h1, h2, p {
 }
 
 header {
-   background-color:  mistyrose;
-   height: 150px;
+  background-color:  mistyrose;
+  height: 150px;
    
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: space-between;
-   align-items: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 
 }
 
 header > h1 {
-   padding: 20px;
-   font-size: 2.1em;
+  padding: 20px;
+  font-size: 2.1em;
    
 }
 
 header > p {
-   padding: 20px;
-   font-size: 2.5em;
+  padding: 20px;
+  font-size: 2.5em;
+  
 
 }
 
@@ -113,6 +114,7 @@ main {
 
 main > p {
   font-family: monospace;
+  text-align: justify;
   font-size: 1.6em;
   line-height: 1.5em;
   padding: 10px;
@@ -120,9 +122,9 @@ main > p {
 }
 
 main > h2 {
-   background-color: rgba(255, 228, 225, 0.5);
-   text-align: center;
-   border: 5px;
+  background-color: rgba(255, 228, 225, 0.5);
+  text-align: center;
+  border: 5px;
 
 }
 main#principal {
