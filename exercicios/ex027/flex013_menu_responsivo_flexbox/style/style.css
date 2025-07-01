@@ -114,7 +114,6 @@ main {
 
 main > p {
   font-family: monospace;
-  text-align: justify;
   font-size: 1.6em;
   line-height: 1.5em;
   padding: 10px;

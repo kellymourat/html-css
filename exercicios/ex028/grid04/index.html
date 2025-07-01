@@ -6,19 +6,20 @@
   <title>Grid Layout, propriedades simplificadas.</title>
   <style>
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: black;
-        color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      color: white;
 
     }
       div.container {
         border: 3px solid  white;
-        display: grid;
+        display: grid; /*congf de grade*/
         grid-template-rows: repeat(3, 80px); /* divide em frações*/
         grid-template-columns: 30px 30% repeat(2, 1fr);
        /* grid-template-columns: 4fr repeat(2, 1fr); */
        /* grid-template-columns: repeat(2, 1fr) 4fr; */
        /* grid-template-columns: 1fr 2fr 1fr;  divide em frações*/
+       /* grid-template-columns: repeat (4, 1fr);*/
         grid-auto-flow: row;
         grid-auto-rows: 80px; /* confg para grid implícido*/
         grid-auto-columns: 120px; 
