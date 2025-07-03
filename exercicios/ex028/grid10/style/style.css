@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+
+
+}
+
+.container {
+  border: 3px solid pink;
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+
+}
+
+.box1 {
+  background-color: blueviolet;
+  grid-area: 1 / 1 / span 1 / span 4;
+
+ 
+}
+
+.box2 {
+  background-color: grey;
+  grid-area: 2 / 1 / span 2 / span 2;
+  
+  
+
+
+}
+
+.box3 {
+  background-color: ivory;
+  color: black;
+  /*linha / column / linha / columun*/
+  grid-area: 2 / 3 / span 2 / span 2;
+  
+
+}
